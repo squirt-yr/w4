@@ -10,13 +10,15 @@ function randomValueFromArray(array){
 }
 
 //入れ替えたい文字列を格納
-//const storyText = '気温が40度近くある暑い夏の日のことだった, そのひは本当に暑かったから :insertx: は散歩に出かけた. 彼らが歩き始めた時 :inserty:, 彼らは怖がった。, そして :insertz:. Bob saw the whole thing, but was not surprised — :insertx: weighs 300 pounds, and it was a hot day.';
+const storyText = '気温が40度近くある暑い夏の日のことだった, そのひは本当に暑かったから :insertx: は散歩に出かけた. 彼らが歩き始めた時 :inserty:, 彼らは怖がった。, そして :insertz:. ボブは全てのことに気がついた, だがそれは驚くべきことではなかった — :insertx: は300キロもあったんだ, それはある夏の暑い日のことだった.';
+const insertX = ['ゴブリンのウィリー', 'ビッグダディー', 'サンタクロース'];
+const insertY = ['スープキッチン', 'ディズニーランド', '官邸'];
+const insertZ = ['勝手に燃えた', '歩道の水溜りに溶けた', 'ナメクジになってヌメヌメと去っていった'];
 
-
-const storyText = 'It was 94 fahrenheit outside, so :insertx: went for a walk. When they got to :inserty:, they stared in horror for a few moments, then :insertz:. Bob saw the whole thing, but was not surprised — :insertx: weighs 300 pounds, and it was a hot day.';
-const insertX = ['Willy the Goblin', 'Big Daddy', 'Father Christmas'];
-const insertY = ['the soup kitchen', 'Disneyland', 'the White House'];
-const insertZ = ['spontaneously combusted', 'melted into a puddle on the sidewalk', 'turned into a slug and crawled away'];
+//const storyText = 'It was 94 fahrenheit outside, so :insertx: went for a walk. When they got to :inserty:, they stared in horror for a few moments, then :insertz:. Bob saw the whole thing, but was not surprised — :insertx: weighs 300 pounds, and it was a hot day.';
+//const insertX = ['Willy the Goblin', 'Big Daddy', 'Father Christmas'];
+//const insertY = ['the soup kitchen', 'Disneyland', 'the White House'];
+//const insertZ = ['spontaneously combusted', 'melted into a puddle on the sidewalk', 'turned into a slug and crawled away'];
 
 
 //格納されている文字列からランダムに選ぶ
