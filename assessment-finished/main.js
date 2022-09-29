@@ -5,7 +5,7 @@ const story = document.querySelector('.story');
 
 //乱数の発生
 function randomValueFromArray(array){
-  const random = Math.floor(Math.random()*array.length);
+  const random = Math.floor(Math.random()*array.length); //Mathライブラリ、配列の長さの範囲内でrandomな整数を生成
   return array[random];
 }
 
@@ -21,10 +21,12 @@ randomize.addEventListener('click', result);
 function result() {
   let newStory = storyText;
 
+  //配列からランダムに選んだ文字列を変数に入れる
   const xItem = randomValueFromArray(insertX);
   const yItem = randomValueFromArray(insertY);
   const zItem = randomValueFromArray(insertZ);
 
+  //文字列を置き換える
   newStory = newStory.replace(':insertx:',xItem);
   newStory = newStory.replace(':insertx:',xItem);
   newStory = newStory.replace(':inserty:',yItem);
