@@ -10,7 +10,7 @@ function randomValueFromArray(array){
 }
 
 //入れ替えたい文字列を格納
-const storyText = '気温が華氏94度近くある暑い夏の日のことだった。そのひは本当に暑かったから:insertx:は散歩に出かけた。彼らが:inserty:に到着した時、彼らは怖がり始めた。そして:insertz:。その時ボブはあることに気がついた。— :insertx:は重さ300ポンドもあったんだ。だかそれは驚くべきことではなかった。なぜなら彼は:insertX:と友達だったからだ。';
+const storyText = '気温が華氏94度近くある暑い夏の日のことだった。そのひは本当に暑かったから:insertx:は散歩に出かけた。彼らが:inserty:に到着した時、彼らは怖がり始めた。そして:insertz:。その時ボブはあることに気がついた。— :insertx:は重さ300ポンドもあったんだ。だかそれは驚くべきことではなかった。なぜなら彼は:insertx:と友達だったからだ。';
 const insertX = ['ゴブリンのウィリー', 'ビッグダディー', 'サンタクロース'];
 const insertY = ['スープキッチン', 'ディズニーランド', '官邸'];
 const insertZ = ['勝手に燃えた', '歩道の水溜りに溶けた', 'ナメクジになってヌメヌメと去っていった'];
@@ -37,6 +37,7 @@ function result() {
   newStory = newStory.replace(':insertx:',xItem);
   newStory = newStory.replace(':inserty:',yItem);
   newStory = newStory.replace(':insertz:',zItem);
+  newStory = newStory.replace(':insertx:',xItem);
 
   //主人公の名前を入力された名前に置き換える
   if (customName.value !== '') {
