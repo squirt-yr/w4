@@ -40,7 +40,7 @@ function result() {
 
   if (customName.value !== '') {
     const name = customName.value;
-    newStory = newStory.replace('Bob', name);
+    newStory = newStory.replace('ボブ', name);
   }
 
   //もし日本の方のラジオボタンが押されたら
