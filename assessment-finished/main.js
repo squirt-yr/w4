@@ -10,7 +10,7 @@ function randomValueFromArray(array){
 }
 
 //入れ替えたい文字列を格納
-const storyText = '気温が華氏94度近くある暑い夏の日のことだった。 そのひは本当に暑かったから :insertx: は散歩に出かけた。 彼らが :inserty: に到着した時、彼らは怖がり始めた。そして :insertz:. ボブは全てのことに気がついた。 だがそれは驚くべきことではなかった — :insertx: は300ポンドもあったんだ。 それはある夏の暑い日のことだった。';
+const storyText = '気温が華氏94度近くある暑い夏の日のことだった。 そのひは本当に暑かったから :insertx: は散歩に出かけた。 彼らが :inserty: に到着した時、彼らは怖がり始めた。そして :insertz:. ボブは全てのことに気がついた。 だがそれは驚くべきことではなかった — :insertx: は重さ300ポンドもあったんだ。 それはある夏の暑い日のことだった。';
 const insertX = ['ゴブリンのウィリー', 'ビッグダディー', 'サンタクロース'];
 const insertY = ['スープキッチン', 'ディズニーランド', '官邸'];
 const insertZ = ['勝手に燃えた', '歩道の水溜りに溶けた', 'ナメクジになってヌメヌメと去っていった'];
@@ -45,8 +45,8 @@ function result() {
 
   //もし日本の方のラジオボタンが押されたら
   if (document.getElementById("jp").checked) {
-    const weight = `${Math.round(300*0.0714286)} キログラム`;
-    const temperature =  `摂氏 ${Math.round((94-32) * 5 / 9)} 度`;
+    const weight = `${Math.round(300*0.0714286)}ストーン`;
+    const temperature =  `摂氏${Math.round((94-32) * 5 / 9)}度`;
     newStory = newStory.replace('華氏94度', temperature);
     newStory = newStory.replace('300ポンド', weight);
     //const weight = `${Math.round(300*0.0714286)} stone`;
