@@ -38,12 +38,13 @@ function result() {
   newStory = newStory.replace(':inserty:',yItem);
   newStory = newStory.replace(':insertz:',zItem);
 
+  //主人公の名前を入力された名前に置き換える
   if (customName.value !== '') {
     const name = customName.value;
     newStory = newStory.replace('ボブ', name);
   }
 
-  //もし日本の方のラジオボタンが押されたら
+  //もし日本のラジオボタンが押されたら気温と重さを置き換える
   if (document.getElementById("jp").checked) {
     const weight = `${Math.round(300*0.0714286)}ストーン`;
     const temperature =  `摂氏${Math.round((94-32) * 5 / 9)}度`;
